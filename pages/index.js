@@ -15,12 +15,9 @@ export default function HomePage() {
 
   return (
     <Layout hideFooter>
-      <Seo structuredData={structuredData} />
+      <Seo rawTitle={`${siteConfig.name} | ${siteConfig.tagline}`} structuredData={structuredData} />
 
       <section className={styles.hero}>
-        <div className={styles.logo} aria-label="OKBrain logo">
-          OK
-        </div>
         <div className={styles.heading}>
           <h1 className={styles.title}>OKBrain</h1>
           <p className={styles.tagline}>{siteConfig.tagline}</p>

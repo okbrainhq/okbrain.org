@@ -3,6 +3,7 @@ import { siteConfig, toAbsoluteUrl } from "../lib/site";
 
 export default function Seo({
   title,
+  rawTitle,
   description = siteConfig.description,
   path = "/",
   image = siteConfig.defaultOgImage,
@@ -10,7 +11,7 @@ export default function Seo({
   publishedTime,
   structuredData
 }) {
-  const fullTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.name;
+  const fullTitle = rawTitle || (title ? `${title} | ${siteConfig.name}` : siteConfig.name);
   const canonicalUrl = toAbsoluteUrl(path);
   const imageUrl = toAbsoluteUrl(image);
 
