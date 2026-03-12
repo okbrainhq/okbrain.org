@@ -1,0 +1,42 @@
+.wrapper {
+  padding: 4rem 0 5rem;
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--accent-strong);
+}

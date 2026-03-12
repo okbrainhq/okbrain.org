@@ -1,0 +1,15 @@
+OKBrain
+
+Site summary:
+OKBrain is a simple static website with a Markdown-powered blog about using AI while retaining ownership of your stack and publishing workflow.
+
+Key routes:
+Home: /
+Blog index: /blog
+Featured post: /blog/own-your-ai-stack
+
+Content notes:
+- Blog posts are written in Markdown.
+- Markdown supports tables and images.
+- Pages are statically generated with Next.js.
+- Navigation includes Home and Blog links in the header and footer.
