@@ -26,14 +26,18 @@ export default function BlogIndexPage({ posts }) {
       <section className={styles.wrapper}>
         <div className={styles.list}>
           {posts.map((post) => (
-            <article key={post.slug} className={styles.card}>
-              <p className={styles.date}>{post.date}</p>
-              <h2>{post.title}</h2>
-              <p>{post.excerpt}</p>
-              <Link className={styles.link} href={`/blog/${post.slug}`}>
-                Read post
-              </Link>
-            </article>
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className={styles.card}
+            >
+              <article>
+                <p className={styles.date}>{post.date}</p>
+                <h2>{post.title}</h2>
+                <p>{post.excerpt}</p>
+                <span className={styles.link}>Read post</span>
+              </article>
+            </Link>
           ))}
         </div>
       </section>

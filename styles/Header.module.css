@@ -19,6 +19,11 @@
   font-size: 0.95rem;
 }
 
+.nav a,
+.brand {
+  transition: color 0.2s ease;
+}
+
 .nav a:hover,
 .brand:hover {
   color: var(--accent-strong);

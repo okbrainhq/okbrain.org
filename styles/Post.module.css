@@ -59,11 +59,26 @@
   color: var(--text);
 }
 
+.content h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+.content h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.2rem;
+}
+
 .content a {
   color: var(--text);
   text-decoration: underline;
   text-decoration-color: var(--border);
   text-underline-offset: 0.2rem;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+.content a:hover {
+  text-decoration-color: var(--text);
 }
 
 .content code {
@@ -116,9 +131,11 @@
 
 .content blockquote {
   margin: 0 0 1.25rem;
-  padding: 0.25rem 0 0.25rem 1rem;
-  border-left: 3px solid var(--border);
+  padding: 0.75rem 0 0.75rem 1.25rem;
+  border-left: 3px solid var(--muted);
   color: var(--text);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0 8px 8px 0;
 }
 
 @media (max-width: 640px) {

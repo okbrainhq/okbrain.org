@@ -8,11 +8,20 @@
 }
 
 .card {
+  display: block;
   padding: 1.5rem;
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--surface);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  border-color: var(--muted);
 }
 
 .card h2 {
@@ -30,13 +39,25 @@
 }
 
 .link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   margin-top: 1rem;
   color: var(--text-secondary);
   font-size: 0.84rem;
   font-weight: 500;
+  transition: color 0.2s ease, gap 0.2s ease;
 }
 
-.link:hover {
+.link::after {
+  content: "\2192";
+  transition: transform 0.2s ease;
+}
+
+.card:hover .link {
   color: var(--accent-strong);
+}
+
+.card:hover .link::after {
+  transform: translateX(2px);
 }
