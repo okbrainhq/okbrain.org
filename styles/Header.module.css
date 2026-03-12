@@ -5,28 +5,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px dashed var(--border);
 }
 
 .brand {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text);
+  text-shadow: 0 0 8px var(--glow);
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+
+.brand::before {
+  content: "> ";
+  color: var(--muted);
 }
 
 .nav {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.15rem;
 }
 
-.nav a,
-.brand {
-  transition: color 0.2s ease;
+.nav a {
+  transition: color 0.15s ease, text-shadow 0.15s ease;
 }
 
 .nav a:hover,
 .brand:hover {
   color: var(--accent-strong);
+  text-shadow: 0 0 12px var(--glow-strong);
 }
 
 @media (max-width: 640px) {

@@ -21,8 +21,10 @@ export default function HomePage() {
         <div className={styles.logo} aria-label="OKBrain logo">
           OK
         </div>
-        <h1 className={styles.title}>OKBrain</h1>
-        <p className={styles.tagline}>{siteConfig.tagline}</p>
+        <div className={styles.heading}>
+          <h1 className={styles.title}>OKBrain</h1>
+          <p className={styles.tagline}>{siteConfig.tagline}</p>
+        </div>
         <Link className={styles.cta} href="/blog/own-your-ai-stack">
           Learn More
         </Link>
