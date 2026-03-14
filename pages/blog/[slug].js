@@ -20,7 +20,7 @@ export default function BlogPostPage({ post }) {
       name: siteConfig.name
     },
     mainEntityOfPage: `${siteConfig.siteUrl}/blog/${post.slug}/`,
-    image: `${siteConfig.siteUrl}${post.ogImage || siteConfig.defaultOgImage}`
+    image: `${siteConfig.siteUrl}/og/${post.slug}.png`
   };
 
   return (
@@ -29,7 +29,7 @@ export default function BlogPostPage({ post }) {
         title={post.title}
         description={post.excerpt}
         path={`/blog/${post.slug}/`}
-        image={post.ogImage}
+        image={`/og/${post.slug}.png`}
         type="article"
         publishedTime={post.date}
         structuredData={structuredData}

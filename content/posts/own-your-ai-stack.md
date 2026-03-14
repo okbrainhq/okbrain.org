@@ -2,7 +2,6 @@
 title: "Own Your AI Stack"
 date: "2026-03-12"
 excerpt: "A simple argument for using AI tools without giving up control of your product, data, or publishing flow."
-ogImage: "/og/own-your-ai-stack.svg"
 ---
 
 AI can make teams faster, but speed without control usually becomes lock-in.

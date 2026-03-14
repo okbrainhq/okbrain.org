@@ -4,16 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/generate-og-images.mjs && next build",
+    "generate-og": "node scripts/generate-og-images.mjs",
     "start": "python3 -m http.server 3000 --directory out"
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "gray-matter": "^4.0.3",
     "next": "^16.1.6",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "satori": "^0.25.0"
   }
 }
