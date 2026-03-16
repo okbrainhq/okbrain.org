@@ -81,7 +81,7 @@ Start by asking it to build a simple tool to interact with an AI model — then 
 
 You don't need to be a developer to use coding agents. It will be hard at first, but you'll figure it out. These coding agents are really good.
 
-As an alternative, you can use a bare-minimum tool like pi.dev and build things around it.
+As an alternative, you can use a bare-minimum tool like [pi.dev](https://pi.dev/) and build things around it.
 
 We strongly discourage you from using MCPs and skills created by others. It's always better to use CLIs and API endpoints. You can always ask your coding agent to build something for you.
 
@@ -100,7 +100,7 @@ As we covered earlier, true model ownership isn't really possible — so we hedg
 
 ## What We are Doing
 
-OkBrain is an initiative of Arunoda Susiripala. The goal is to make sure Sri Lanka is ready for what’s coming.
+OKBrain is an initiative of Arunoda Susiripala. The goal is to make sure Sri Lanka is ready for what’s coming.
 
 We are working on [OKBrain Harness](https://github.com/okbrainhq/OKBrain-Harness), which is an open-source AI Harness that sits between ChatGPT and OpenClaw. It's our take on how to own the AI stack. You should not run it as-is but try to steal ideas from it.
 
