@@ -6,7 +6,7 @@ OKBrain is a simple static website with a Markdown-powered blog about using AI w
 Key routes:
 Home: /
 Blog index: /blog
-Featured post: /blog/own-your-ai-stack
+Featured post: /blog/embrace-ai-but-own-it
 
 Content notes:
 - Blog posts are written in Markdown.

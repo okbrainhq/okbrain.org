@@ -22,7 +22,7 @@ export default function HomePage() {
           <h1 className={styles.title}>OKBrain</h1>
           <p className={styles.tagline}>{siteConfig.tagline}</p>
         </div>
-        <Link className={styles.cta} href="/blog/own-your-ai-stack">
+        <Link className={styles.cta} href="/blog/embrace-ai-but-own-it">
           Learn More
         </Link>
       </section>
