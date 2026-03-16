@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
+
 import { siteConfig } from "../lib/site";
 import styles from "../styles/Home.module.css";
 
@@ -25,6 +26,7 @@ export default function HomePage() {
         <Link className={styles.cta} href="/blog/embrace-ai-but-own-it">
           Learn More
         </Link>
+
       </section>
     </Layout>
   );

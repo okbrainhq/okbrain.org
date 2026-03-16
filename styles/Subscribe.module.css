@@ -1,0 +1,21 @@
+.container {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 20px var(--glow-strong), 0 0 40px var(--glow);
+}
+
+.description {
+  margin: 0.75rem 0 0;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
