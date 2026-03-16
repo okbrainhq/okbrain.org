@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 4000",
     "build": "node scripts/generate-og-images.mjs && next build",
     "generate-og": "node scripts/generate-og-images.mjs",
     "start": "python3 -m http.server 3000 --directory out"
