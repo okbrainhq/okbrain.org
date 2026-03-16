@@ -42,7 +42,9 @@ Owning memory and data doesn't mean you are in control. If you don’t know how 
 
 Our suggestion is to either start building tools yourself or make sure you understand the tools you select. Also, it’s very important to stay away from skills and MCP servers created by others.
 
-### This is a tricky one.
+### 3. Owning Models
+
+This is a tricky one.
 
 We think we will never be able to run everything locally. Yes, consumer hardware is getting better, and so is enterprise hardware. There will always be a cloud model that outperforms whatever you run locally.
 
