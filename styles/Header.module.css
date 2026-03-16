@@ -51,11 +51,11 @@
   }
 
   .brand {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
   }
 
   .nav {
-    gap: 0.85rem;
-    font-size: 1rem;
+    gap: 1.5rem;
+    font-size: 1.3rem;
   }
 }
