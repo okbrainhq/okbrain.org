@@ -66,9 +66,10 @@ function createSiteCardMarkup() {
               props: {
                 style: {
                   color: "#88c888",
-                  fontSize: 96,
+                  fontSize: 170,
                   letterSpacing: "0.05em",
                   lineHeight: 1,
+                  textAlign: "center",
                 },
                 children: "OKBrain",
               },
@@ -78,39 +79,12 @@ function createSiteCardMarkup() {
               props: {
                 style: {
                   color: "#9ab89a",
-                  fontSize: 52,
+                  fontSize: 76,
                   lineHeight: 1.4,
-                  marginTop: 8,
+                  marginTop: 16,
                   textAlign: "center",
                 },
                 children: "Embrace AI, but Own It.",
-              },
-            },
-            {
-              type: "div",
-              props: {
-                style: {
-                  display: "flex",
-                  alignItems: "center",
-                  marginTop: 32,
-                  padding: "8px 24px",
-                  border: "1px dashed #5e8a5e",
-                  color: "#88c888",
-                  fontSize: 32,
-                  letterSpacing: "0.04em",
-                },
-                children: "Learn More →",
-              },
-            },
-            {
-              type: "div",
-              props: {
-                style: {
-                  color: "#5e8a5e",
-                  fontSize: 28,
-                  marginTop: 40,
-                },
-                children: "okbrain.org",
               },
             },
           ],
