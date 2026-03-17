@@ -1,0 +1,68 @@
+.form {
+  margin: 1.5rem 0 0;
+  width: 100%;
+  max-width: 24rem;
+}
+
+.field {
+  border: 1px dashed var(--muted);
+  margin-bottom: -1px;
+}
+
+.input {
+  width: 100%;
+  padding: 0.4rem 0.7rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: var(--muted);
+}
+
+.input:disabled {
+  opacity: 0.5;
+}
+
+.button {
+  width: 100%;
+  padding: 0.4rem 0.9rem;
+  background: transparent;
+  border: 1px dashed var(--muted);
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  text-shadow: 0 0 8px var(--glow);
+  transition: all 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--accent);
+  color: var(--background);
+  text-shadow: none;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.success {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px var(--glow);
+}
+
+.error {
+  margin: 0.4rem 0 0;
+  color: #c88888;
+  font-size: 1rem;
+}
