@@ -183,6 +183,76 @@ function createBlogPostMarkup(title, excerpt, date, slug) {
   };
 }
 
+function createLaunchPartyMarkup() {
+  return {
+    type: "div",
+    props: {
+      style: {
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        backgroundColor: "#1a1a1a",
+        padding: "52px",
+        fontFamily: "VT323",
+      },
+      children: {
+        type: "div",
+        props: {
+          style: {
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            backgroundColor: "#212121",
+            borderRadius: "28px",
+            border: "2px solid #3a5a3a",
+            padding: "58px",
+          },
+          children: [
+            {
+              type: "div",
+              props: {
+                style: {
+                  color: "#5e8a5e",
+                  fontSize: 38,
+                  marginBottom: 20,
+                },
+                children: "// April 1, 2026",
+              },
+            },
+            {
+              type: "div",
+              props: {
+                style: {
+                  color: "#88c888",
+                  fontSize: 108,
+                  lineHeight: 1.15,
+                  marginBottom: 24,
+                },
+                children: "OKBrain Launch Party",
+              },
+            },
+            {
+              type: "div",
+              props: {
+                style: {
+                  fontFamily: "IBM Plex Mono",
+                  color: "#9ab89a",
+                  fontSize: 28,
+                  lineHeight: 1.6,
+                },
+                children:
+                  "OKBrain Harness \u00B7 Open-source grants \u00B7 Office hours",
+              },
+            },
+          ],
+        },
+      },
+    },
+  };
+}
+
 async function renderToPng(element, fonts) {
   const svg = await satori(element, { width: 1200, height: 630, fonts });
   const resvg = new Resvg(svg, { fitTo: { mode: "width", value: 1200 } });
@@ -202,6 +272,12 @@ async function main() {
   const sitePng = await renderToPng(siteCard, fonts);
   fs.writeFileSync(path.join(outputDir, "site-card.png"), sitePng);
   console.log("  generated site-card.png");
+
+  // Launch party card
+  const launchPartyCard = createLaunchPartyMarkup();
+  const launchPartyPng = await renderToPng(launchPartyCard, fonts);
+  fs.writeFileSync(path.join(outputDir, "launch-party.png"), launchPartyPng);
+  console.log("  generated launch-party.png");
 
   // Blog post cards
   const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".md"));

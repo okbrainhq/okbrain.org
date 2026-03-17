@@ -11,6 +11,7 @@ export default function LaunchPartyPage() {
         title="Launch Party"
         description="Join the OKBrain Launch Party on April 1st, 2026. Open-source AI Harness, grants, and weekly office hours."
         path="/launch-party"
+        image="/og/launch-party.png"
       />
 
       <section className={styles.container}>
