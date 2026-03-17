@@ -1,5 +1,5 @@
 .form {
-  margin: 1.5rem auto 0;
+  margin: 1.5rem 0 0;
   width: 100%;
   max-width: 24rem;
 }
@@ -37,6 +37,7 @@
   color: var(--accent);
   font-family: var(--font-body);
   font-size: 1.2rem;
+  text-align: left;
   cursor: pointer;
   text-shadow: 0 0 8px var(--glow);
   transition: all 0.2s ease;
