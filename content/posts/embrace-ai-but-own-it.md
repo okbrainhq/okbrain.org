@@ -110,4 +110,4 @@ We are officially launching on April 1st, 2026 (for real). Here are a couple of 
 * Grants for open-source projects with common goals
 * Weekly office hours
 
-For now, join our [newsletter](/subscribe).
+Join our [Launch Party](/launch-party) to be part of it.
