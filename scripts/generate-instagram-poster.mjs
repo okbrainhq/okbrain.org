@@ -235,7 +235,7 @@ async function main() {
                 },
                 children: [
                   detailItem("Hatch Works"),
-                  detailItem("April 1st, 2026"),
+                  detailItem("March 31st, 2026"),
                   detailItem("6PM Onwards"),
                 ],
               },

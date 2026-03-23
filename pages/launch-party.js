@@ -9,14 +9,14 @@ export default function LaunchPartyPage() {
     <Layout>
       <Seo
         title="Launch Party"
-        description="Join the OKBrain Launch Party on April 1st, 2026. Open-source AI Harness, grants, and weekly office hours."
+        description="Join the OKBrain Launch Party on March 31st, 2026. Open-source AI Harness, grants, and weekly office hours."
         path="/launch-party"
         image="/og/launch-party.png"
       />
 
       <section className={styles.container}>
         <h1 className={styles.title}>Launch Party</h1>
-        <p className={styles.date}>April 1st, 2026</p>
+        <p className={styles.date}>March 31st, 2026</p>
 
         <div className={styles.content}>
           <p>OKBrain is officially launching. Join us to witness:</p>

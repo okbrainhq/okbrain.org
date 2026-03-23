@@ -218,7 +218,7 @@ function createLaunchPartyMarkup() {
                   fontSize: 38,
                   marginBottom: 20,
                 },
-                children: "// April 1, 2026",
+                children: "// March 31, 2026",
               },
             },
             {
