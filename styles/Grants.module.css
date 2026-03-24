@@ -1,0 +1,98 @@
+.container {
+  width: min(720px, 100%);
+  padding: 4rem 0 5rem;
+}
+
+.container h1 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-body);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-shadow: 0 0 12px var(--glow);
+}
+
+.content {
+  margin-top: 1.5rem;
+  font-family: var(--font-readable);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  border-top: 1px dashed var(--border);
+  padding-top: 2rem;
+}
+
+.content h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--text);
+  text-shadow: 0 0 8px var(--glow);
+}
+
+.content p {
+  margin: 0 0 1.25rem;
+}
+
+.content ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.4rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content li::marker {
+  color: var(--muted);
+}
+
+.content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 0.2rem;
+  transition: text-decoration-color 0.15s ease, text-shadow 0.15s ease;
+}
+
+.content a:hover {
+  text-decoration-color: var(--accent);
+  text-shadow: 0 0 8px var(--glow);
+}
+
+.content strong {
+  color: var(--text);
+}
+
+.disclaimer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.cta {
+  margin: 2.5rem 0;
+  padding: 2rem 0;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: left;
+}
+
+.applyButton {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  border: 1px dashed var(--accent);
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  text-decoration: none !important;
+  text-shadow: 0 0 8px var(--glow);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.applyButton:hover {
+  background: var(--accent);
+  color: var(--background);
+  text-shadow: none;
+}

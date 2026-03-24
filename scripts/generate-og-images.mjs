@@ -183,6 +183,91 @@ function createBlogPostMarkup(title, excerpt, date, slug) {
   };
 }
 
+function createGrantsMarkup(logoDataUrl) {
+  return {
+    type: "div",
+    props: {
+      style: {
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        backgroundColor: "#1a1a1a",
+        padding: "52px",
+        fontFamily: "VT323",
+      },
+      children: {
+        type: "div",
+        props: {
+          style: {
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            backgroundColor: "#212121",
+            borderRadius: "28px",
+            border: "2px solid #3a5a3a",
+            padding: "58px",
+          },
+          children: [
+            {
+              type: "img",
+              props: {
+                src: logoDataUrl,
+                width: 80,
+                height: 80,
+                style: {
+                  borderRadius: "16px",
+                  marginBottom: 20,
+                },
+              },
+            },
+            {
+              type: "div",
+              props: {
+                style: {
+                  color: "#88c888",
+                  fontSize: 108,
+                  lineHeight: 1.15,
+                  marginBottom: 24,
+                },
+                children: "OKBrain Grants",
+              },
+            },
+            {
+              type: "div",
+              props: {
+                style: {
+                  display: "flex",
+                  flexDirection: "column",
+                  fontFamily: "IBM Plex Mono",
+                  color: "#9ab89a",
+                  fontSize: 28,
+                  lineHeight: 1.6,
+                },
+                children: [
+                  {
+                    type: "div",
+                    props: {
+                      children: "Prepaid card \u00B7 Office hours \u00B7 Maker studio access",
+                    },
+                  },
+                  {
+                    type: "div",
+                    props: {
+                      children: "and more...",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      },
+    },
+  };
+}
+
 function createLaunchPartyMarkup() {
   return {
     type: "div",
@@ -272,6 +357,14 @@ async function main() {
   const sitePng = await renderToPng(siteCard, fonts);
   fs.writeFileSync(path.join(outputDir, "site-card.png"), sitePng);
   console.log("  generated site-card.png");
+
+  // Grants card
+  const logoBuffer = fs.readFileSync(path.join(root, "public/icon-192.png"));
+  const logoDataUrl = `data:image/png;base64,${logoBuffer.toString("base64")}`;
+  const grantsCard = createGrantsMarkup(logoDataUrl);
+  const grantsPng = await renderToPng(grantsCard, fonts);
+  fs.writeFileSync(path.join(outputDir, "grants.png"), grantsPng);
+  console.log("  generated grants.png");
 
   // Launch party card
   const launchPartyCard = createLaunchPartyMarkup();
