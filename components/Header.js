@@ -10,6 +10,7 @@ export default function Header() {
       <nav className={styles.nav} aria-label="Primary">
         <Link href="/">Home</Link>
         <Link href="/blog">Blog</Link>
+        <Link href="/harness/">Harness</Link>
       </nav>
     </header>
   );

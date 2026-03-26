@@ -28,6 +28,11 @@
   flex: 1;
 }
 
+.mainWide {
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+}
+
 @media (max-width: 640px) {
   .page {
     --header-height: 3.8rem;
