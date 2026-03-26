@@ -8,6 +8,7 @@ import { Resvg } from "@resvg/resvg-js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const postsDir = path.join(root, "content/posts");
+const harnessDir = path.join(root, "content/harness");
 const outputDir = path.join(root, "public/og");
 
 async function loadFonts() {
@@ -344,6 +345,73 @@ async function renderToPng(element, fonts) {
   return resvg.render().asPng();
 }
 
+function createHarnessDocMarkup(title, slug) {
+  return {
+    type: "div",
+    props: {
+      style: {
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        backgroundColor: "#1a1a1a",
+        padding: "52px",
+        fontFamily: "VT323",
+      },
+      children: {
+        type: "div",
+        props: {
+          style: {
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            backgroundColor: "#212121",
+            borderRadius: "28px",
+            border: "2px solid #3a5a3a",
+            padding: "58px",
+          },
+          children: [
+            {
+              type: "div",
+              props: {
+                style: {
+                  color: "#5e8a5e",
+                  fontSize: 72,
+                  marginBottom: 20,
+                },
+                children: "// OKBrain Harness",
+              },
+            },
+            {
+              type: "div",
+              props: {
+                style: {
+                  color: "#88c888",
+                  fontSize: 120,
+                  lineHeight: 1.15,
+                },
+                children: title,
+              },
+            },
+            {
+              type: "div",
+              props: {
+                style: {
+                  color: "#5e8a5e",
+                  fontSize: 39,
+                  marginTop: 24,
+                },
+                children: `okbrain.org/harness/${slug}`,
+              },
+            },
+          ],
+        },
+      },
+    },
+  };
+}
+
 async function main() {
   console.log("Generating OG images...");
   const fonts = await loadFonts();
@@ -390,6 +458,21 @@ async function main() {
 
     fs.writeFileSync(path.join(outputDir, `${slug}.png`), png);
     console.log(`  generated ${slug}.png`);
+  }
+
+  // Harness doc cards
+  const harnessFiles = fs.readdirSync(harnessDir).filter((f) => f.endsWith(".md")).sort();
+
+  for (const file of harnessFiles) {
+    const slug = file.replace(/^\d+-/, "").replace(/\.md$/, "");
+    const content = fs.readFileSync(path.join(harnessDir, file), "utf8");
+    const { data } = matter(content);
+
+    const element = createHarnessDocMarkup(data.title, slug);
+    const png = await renderToPng(element, fonts);
+
+    fs.writeFileSync(path.join(outputDir, `harness-${slug}.png`), png);
+    console.log(`  generated harness-${slug}.png`);
   }
 
   console.log("Done!");

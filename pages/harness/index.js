@@ -16,6 +16,7 @@ export default function HarnessIndexPage({ doc, docs }) {
         title="Harness — Introduction"
         description="OKBrain Harness — open-source orchestration layer for AI agents"
         path="/harness/"
+        image="/og/harness-introduction.png"
       />
 
       <div className={styles.layout}>

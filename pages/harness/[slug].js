@@ -18,6 +18,7 @@ export default function HarnessDocPage({ doc, docs, slug }) {
         title={`Harness — ${doc.title}`}
         description={`OKBrain Harness documentation: ${doc.title}`}
         path={`/harness/${slug}/`}
+        image={`/og/harness-${slug}.png`}
       />
 
       <div className={styles.layout}>
