@@ -11,7 +11,7 @@ export default function HarnessIndexPage({ doc, docs }) {
   const next = docs.length > 1 ? docs[1] : null;
 
   return (
-    <Layout wide>
+    <Layout>
       <Seo
         title="Harness — Introduction"
         description="OKBrain Harness — open-source orchestration layer for AI agents"

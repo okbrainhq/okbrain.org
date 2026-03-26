@@ -18,7 +18,7 @@ export default function HarnessSidebar({ docs, currentSlug, isOpen, onToggle }) 
             </button>
           <div className={styles.sidebarHeader}>
             <Link className={styles.sidebarTitle} href="/harness/" onClick={onToggle}>
-              Harness
+              OKBrain Harness
             </Link>
           </div>
             <nav className={styles.sidebarNav}>
@@ -41,7 +41,7 @@ export default function HarnessSidebar({ docs, currentSlug, isOpen, onToggle }) 
         <aside className={styles.sidebar} aria-hidden="true">
           <div className={styles.sidebarHeader}>
             <Link className={styles.sidebarTitle} href="/harness/">
-              Harness
+              OKBrain Harness
             </Link>
           </div>
           <nav className={styles.sidebarNav}>

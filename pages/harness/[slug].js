@@ -13,7 +13,7 @@ export default function HarnessDocPage({ doc, docs, slug }) {
   const next = currentIndex < docs.length - 1 ? docs[currentIndex + 1] : null;
 
   return (
-    <Layout wide>
+    <Layout>
       <Seo
         title={`Harness — ${doc.title}`}
         description={`OKBrain Harness documentation: ${doc.title}`}
