@@ -85,6 +85,8 @@ Environment variables override config file values.
 
 Budget controls prevent runaway spending:
 
+![Harness dashboard showing budget and traces](/images/harness-dashboard.svg)
+
 ```javascript
 {
   budget: {

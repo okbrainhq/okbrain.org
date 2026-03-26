@@ -57,6 +57,12 @@ Creates a new step.
 
 ---
 
+## See the API in Action
+
+Watch a walkthrough of the Harness API, covering pipelines, steps, and built-in handlers:
+
+<!-- youtube:ScMzIvxBSi4 -->
+
 ## Built-in Handlers
 
 ### `llm(prompt, options?)`

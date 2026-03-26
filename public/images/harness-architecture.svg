@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#1a1a1a"/>
+  <rect x="1" y="1" width="798" height="398" stroke="#333" stroke-width="1" fill="none"/>
+  <text x="400" y="40" text-anchor="middle" font-family="monospace" font-size="16" fill="#88c888">OKBrain Harness — Architecture</text>
+  <rect x="50" y="80" width="160" height="60" stroke="#88c888" stroke-width="1" fill="#1a1a1a"/>
+  <text x="130" y="115" text-anchor="middle" font-family="monospace" font-size="13" fill="#88c888">Pipeline</text>
+  <rect x="320" y="80" width="160" height="60" stroke="#88c888" stroke-width="1" fill="#1a1a1a"/>
+  <text x="400" y="115" text-anchor="middle" font-family="monospace" font-size="13" fill="#88c888">Middleware</text>
+  <rect x="590" y="80" width="160" height="60" stroke="#88c888" stroke-width="1" fill="#1a1a1a"/>
+  <text x="670" y="115" text-anchor="middle" font-family="monospace" font-size="13" fill="#88c888">Context</text>
+  <rect x="50" y="200" width="160" height="60" stroke="#5e8a5e" stroke-width="1" fill="#1a1a1a"/>
+  <text x="130" y="235" text-anchor="middle" font-family="monospace" font-size="13" fill="#ccc">Steps</text>
+  <rect x="320" y="200" width="160" height="60" stroke="#5e8a5e" stroke-width="1" fill="#1a1a1a"/>
+  <text x="400" y="235" text-anchor="middle" font-family="monospace" font-size="13" fill="#ccc">Traces</text>
+  <rect x="590" y="200" width="160" height="60" stroke="#5e8a5e" stroke-width="1" fill="#1a1a1a"/>
+  <text x="670" y="235" text-anchor="middle" font-family="monospace" font-size="13" fill="#ccc">Plugins</text>
+  <rect x="50" y="310" width="160" height="60" stroke="#5e8a5e" stroke-width="1" fill="#1a1a1a"/>
+  <text x="130" y="345" text-anchor="middle" font-family="monospace" font-size="13" fill="#ccc">LLM Providers</text>
+  <rect x="320" y="310" width="160" height="60" stroke="#5e8a5e" stroke-width="1" fill="#1a1a1a"/>
+  <text x="400" y="345" text-anchor="middle" font-family="monospace" font-size="13" fill="#ccc">Budget</text>
+  <rect x="590" y="310" width="160" height="60" stroke="#5e8a5e" stroke-width="1" fill="#1a1a1a"/>
+  <text x="670" y="345" text-anchor="middle" font-family="monospace" font-size="13" fill="#ccc">Guards</text>
+  <line x1="210" y1="110" x2="320" y2="110" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="480" y1="110" x2="590" y2="110" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="130" y1="140" x2="130" y2="200" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="400" y1="140" x2="400" y2="200" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="670" y1="140" x2="670" y2="200" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="130" y1="260" x2="130" y2="310" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="400" y1="260" x2="400" y2="310" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="670" y1="260" x2="670" y2="310" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+</svg>

@@ -6,6 +6,8 @@ title: Architecture
 
 Harness is built around a few core concepts that work together to provide a flexible and powerful AI orchestration framework.
 
+![Harness architecture diagram](/images/harness-architecture.svg)
+
 ## Core Concepts
 
 ### Pipelines

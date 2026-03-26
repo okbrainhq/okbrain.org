@@ -19,11 +19,19 @@ Building production AI systems means wrangling multiple models, managing state, 
 
 Harness treats every AI workflow as a **pipeline**. Each pipeline is a directed graph of steps that can include LLM calls, function invocations, conditional branching, and human approval gates.
 
+![Harness pipeline overview](/images/harness-pipeline.svg)
+
 ```
 Input → Preprocess → LLM Call → Validate → Output
                         ↓ (on failure)
                       Retry → Fallback Model
 ```
+
+## See It In Action
+
+This short demo walks through building and running a complete Harness pipeline from scratch:
+
+<!-- youtube:dQw4w9WgXcQ -->
 
 ## Next Steps
 

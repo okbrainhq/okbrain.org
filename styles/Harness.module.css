@@ -303,6 +303,7 @@
 .contentArea {
   flex: 1;
   min-width: 0;
+  container-type: inline-size;
 }
 
   .content {
