@@ -2,9 +2,9 @@
 title: Events/Calendar Management
 ---
 
-OKBrain has first-class support for events and calendar management. Unlike a traditional calendar app, OKBrain works as your personal assistant.
+OKBrain Harness has first-class support for events and calendar management. Unlike a traditional calendar app, OKBrain Harness works as your personal assistant.
 
-You can simply ask it to schedule an event, or take a screenshot or photo of an event and it'll add it for you.
+You can simply ask it to schedule an event, or take a screenshot or photo of an event and it will add it for you.
 
 It proactively shows your upcoming events for the next 24 hours, 48 hours, and the following week.
 

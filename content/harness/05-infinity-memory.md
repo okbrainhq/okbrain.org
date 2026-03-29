@@ -2,13 +2,13 @@
 title: Infinite Memory
 ---
 
-OKBrain has a continuous fact extraction system that tries to learn as much as possible from your conversations and other interactions. Everything stays on your machine, and you can see exactly what it knows about you.
+OKBrain Harness has a continuous fact extraction system that learns from your conversations and other interactions. Everything stays on your machine, and you can see exactly what it knows about you.
 
-It uses a tiered architecture to achieve this:
+It uses a tiered architecture:
 
 ## Continuous Fact Extraction
 
-Every 30 minutes, it goes through your conversations and tries to extract facts. You can use a local model like Qwen 3.5 4B for this. If you can't run that model, it falls back to Gemini 3 Flash.
+Every 30 minutes, it goes through your conversations and extracts facts. You can use a local model like Qwen 3.5 4B for this. If you cannot run that model, it falls back to Gemini 3 Flash.
 
 Each extracted fact is categorized into one of the following groups:
 
@@ -23,9 +23,9 @@ If you enable vector embedding support, it will also generate embeddings for the
 
 ## Fact Sheet Injection
 
-We can't send every fact to the AI model when you ask a question. Instead, we generate a fact sheet containing about 100–130 facts from all the categories above.
+We cannot send every fact to the AI model when you ask a question. Instead, we generate a fact sheet containing about 100–130 facts from all the categories above.
 
-The fact sheet is generated right after fact extraction, using the same LLM. Here's how it works:
+The fact sheet is generated right after fact extraction, using the same LLM. Here is how it works:
 
 * We send the previous fact sheet (if it exists)
 * We send the newly extracted facts grouped by category
@@ -43,14 +43,14 @@ These facts supplement the fact sheet to provide richer context when answering y
 
 ## Explicit Fact & Conversation Search
 
-We've given the AI model tools to search facts and conversations on demand. If it needs more information about you, it can search the knowledge base and retrieve relevant results.
+We have given the AI model tools to search facts and conversations on demand. If it needs more information about you, it can search the knowledge base and retrieve relevant results.
 
 ## Recent Conversation Injections
 
-Since facts are extracted every 30 minutes, there's a window where the AI model doesn't know about your recent interactions. To bridge this gap, we feed all questions (including follow-up questions) from that blind window into the AI model's context.
+Since facts are extracted every 30 minutes, there is a window where the AI model does not know about your recent interactions. To bridge this gap, we feed all questions (including follow-up questions) from that blind window into the AI model's context.
 
 This way, the AI model is always aware of your recent conversations.
 
-This is how we achieve infinite memory. It's straightforward to implement, requires no special libraries, and while it's not perfect, it gets the job done.
+This is how we achieve infinite memory. It is straightforward to implement, requires no special libraries, and while it is not perfect, it gets the job done.
 
 You can visit the /me page to view your facts and fact sheets, and edit them as you wish.

@@ -2,7 +2,7 @@
 title: Quick Start Guide
 ---
 
-Try deploying it on a Macbook as a simple Next.js server.
+Deploy it on a MacBook as a simple Next.js server:
 
 ```
 git clone https://github.com/okbrainhq/OKBrain-Harness.git brain
@@ -45,7 +45,7 @@ GOOGLE_API_KEY=your-api-key-here
 
 Now visit <http://localhost:3000> to access your app.
 
-You'll be asked to log in. Let's create your first user from within the project:
+You'll be asked to log in. Create your first user from within the project:
 
 ```
 npx tsx scripts/create-user.ts hello@user.com password
@@ -53,4 +53,4 @@ npx tsx scripts/create-user.ts hello@user.com password
 
 Then log in with those credentials at <http://localhost:3000>.
 
-Now you have a very basic version of OKBrain. You can ask questions with Gemini, but it has no access to the internet or computer use. For those, see [Proper Dev Setup](/harness/proper-dev-setup/) and [Enabling Additional Features](/harness/enabling-features/).
+This guide is just for trying out OKBrain Harness quickly. For a proper development setup, see [Proper Dev Setup](/harness/proper-dev-setup/).

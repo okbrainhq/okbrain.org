@@ -2,14 +2,14 @@
 title: Production Deployment to a Local Mac
 ---
 
-This guide covers running OKBrain on a MacBook with a Linux VM handling the app server. The Mac host runs Ollama for local models, and the VM runs OKBrain via PM2.
+This guide covers running OKBrain Harness on a MacBook with a Linux VM handling the app server. The Mac host runs Ollama for local models, and the VM runs OKBrain Harness via PM2.
 
 ## Architecture
 
 * **Mac host** — runs Ollama (for local AI models and embeddings)
-* **Linux VM** — runs OKBrain (Debian on UTM, OrbStack, or Parallels)
+* **Linux VM** — runs OKBrain Harness (Debian on UTM, OrbStack, or Parallels)
 
-## Setup the Linux VM
+## Set Up the Linux VM
 
 Install a Debian Desktop OS using your preferred VM tool. Then set a hostname:
 

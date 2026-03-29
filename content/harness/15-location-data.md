@@ -2,7 +2,7 @@
 title: Location Data
 ---
 
-By default, OKBrain requests exact location data for every conversation. You can disable this using the location icon on the home page.
+By default, OKBrain Harness requests exact location data for every conversation. You can disable this using the location icon on the home page.
 
 When paired with Google Maps and weather data, location information helps agents give you better, more contextual results.
 

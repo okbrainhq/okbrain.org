@@ -2,7 +2,7 @@
 title: Apps with a Coding Agent
 ---
 
-It's hard to ship every feature you can imagine in a harness. Instead, we have internal apps. You can use apps to extend OKBrain's functionality — an app is essentially a command-line interface (CLI).
+It is hard to ship every feature you can imagine in a harness. Instead, we have internal apps. You can use apps to extend OKBrain Harness's functionality — an app is essentially a command-line interface (CLI).
 
 AI models can access these CLIs and use them as needed.
 

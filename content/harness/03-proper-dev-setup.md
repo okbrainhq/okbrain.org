@@ -2,11 +2,9 @@
 title: Proper Dev Setup
 ---
 
-We don't recommend deploying this app as-is. Instead, we encourage you to treat it as a development project and work with a coding agent to customize it for your needs.
+We don't recommend deploying this app as-is. Instead, treat it as a development project and work with a coding agent to customize it for your needs.
 
-> We recommend running it on a Linux Virtual Machine. You can use Ubuntu or Debian.
-
-Use a VM setup tool (on Mac: Parallels, UTM, or OrbStack) and install Ubuntu Desktop.
+**OKBrain Harness requires a Linux environment.** Set up a Debian or Ubuntu Virtual Machine (on Mac: Parallels, UTM, or OrbStack).
 
 Open a terminal on Ubuntu and install the following tools:
 
@@ -41,7 +39,7 @@ PING mybrain.local (10.211.55.9): 56 data bytes
 
 ## Connecting to the Ubuntu VM
 
-The best approach is to use VSCode and connect directly via [Remote SSH](https://code.visualstudio.com/docs/remote/ssh). You can then work with OKBrain just like any other project, but everything runs inside the VM.
+The best approach is to use VSCode and connect directly via [Remote SSH](https://code.visualstudio.com/docs/remote/ssh). You can then work with OKBrain Harness just like any other project, but everything runs inside the VM.
 
 > You can also use any other editor or just the terminal.
 
@@ -55,9 +53,9 @@ If you don't know your username, run the `whoami` command in a terminal on Ubunt
 
 ## Setting Up a Coding Agent
 
-We highly recommend working with a coding agent on the OKBrain project — you can ask questions, add/remove features, and more. Since you already have VSCode, it comes with GitHub Copilot. Alternatively, you can use Claude Code, Codex, or OpenCode.
+We highly recommend working with a coding agent on the OKBrain Harness project — you can ask questions, add or remove features, and more. Since you already have VSCode, it comes with GitHub Copilot. Alternatively, you can use Claude Code, Codex, or OpenCode.
 
-## Setting Up OKBrain
+## Setting Up OKBrain Harness
 
 Clone the repo:
 
@@ -108,7 +106,7 @@ Now visit <http://localhost:3000> to access your app.
 >
 > `ssh -L 3000:localhost:3000 yourusername@mybrain.local`
 
-You'll be asked to log in. Let's create your first user from within the project:
+You'll be asked to log in. Create your first user from within the project:
 
 ```
 npx tsx scripts/create-user.ts hello@user.com password
@@ -116,4 +114,4 @@ npx tsx scripts/create-user.ts hello@user.com password
 
 Then log in with those credentials at <http://localhost:3000>.
 
-Now you have a very basic version of OKBrain. You can ask questions with Gemini, but it has no access to the internet or computer use. For those, see [Enabling Additional Features](/harness/enabling-features/).
+Now you have a very basic version of OKBrain Harness. You can ask questions with Gemini, but it has no access to the internet or computer use. For those, see [Enabling Additional Features](/harness/enabling-features/).

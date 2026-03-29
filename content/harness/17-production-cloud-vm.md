@@ -2,7 +2,7 @@
 title: Production Deployment to a Cloud VM
 ---
 
-This guide covers deploying OKBrain to a remote Debian server (e.g., a cloud VM from DigitalOcean, Hetzner, AWS, etc.).
+This guide covers deploying OKBrain Harness to a remote Debian server (e.g., a cloud VM from DigitalOcean, Hetzner, AWS, etc.).
 
 ## One-Time Server Setup
 
