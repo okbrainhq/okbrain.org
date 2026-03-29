@@ -13,7 +13,7 @@ export default function HarnessIndexPage({ doc, docs }) {
   return (
     <Layout>
       <Seo
-        title="Harness — Introduction"
+        rawTitle="Introduction - OKBrain Harness"
         description="OKBrain Harness — open-source orchestration layer for AI agents"
         path="/harness/"
         image="/og/harness-introduction.png"
@@ -43,6 +43,7 @@ export default function HarnessIndexPage({ doc, docs }) {
                 Menu
               </button>
             )}
+            <h1>{doc.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: doc.contentHtml }} />
           </article>
 

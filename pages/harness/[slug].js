@@ -15,7 +15,7 @@ export default function HarnessDocPage({ doc, docs, slug }) {
   return (
     <Layout>
       <Seo
-        title={`Harness — ${doc.title}`}
+        rawTitle={`${doc.title} - OKBrain Harness`}
         description={`OKBrain Harness documentation: ${doc.title}`}
         path={`/harness/${slug}/`}
         image={`/og/harness-${slug}.png`}
@@ -45,6 +45,7 @@ export default function HarnessDocPage({ doc, docs, slug }) {
                 Menu
               </button>
             )}
+            <h1>{doc.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: doc.contentHtml }} />
           </article>
 
