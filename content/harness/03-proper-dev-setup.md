@@ -62,7 +62,7 @@ We highly recommend working with a coding agent on the OKBrain project — you c
 Clone the repo:
 
 ```
-git clone git@github.com:arunoda/brain.git
+git clone https://github.com/okbrainhq/OKBrain-Harness.git brain
 cd brain
 ```
 
@@ -116,4 +116,4 @@ npx tsx scripts/create-user.ts hello@user.com password
 
 Then log in with those credentials at <http://localhost:3000>.
 
-Now you have a very basic version of OKBrain. You can ask questions with Gemini, but it has no access to the internet or computer use. For those, see Enabling Additional Features.
+Now you have a very basic version of OKBrain. You can ask questions with Gemini, but it has no access to the internet or computer use. For those, see [Enabling Additional Features](/harness/enabling-features/).
