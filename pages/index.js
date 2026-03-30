@@ -27,8 +27,8 @@ export default function HomePage() {
           <Link className={styles.cta} href="/blog/embrace-ai-but-own-it">
             Learn More
           </Link>
-          <Link className={`${styles.cta} ${styles.ctaSecondary}`} href="/launch-party">
-            Launch Party
+          <Link className={`${styles.cta} ${styles.ctaSecondary}`} href="/grants">
+            Apply for Grants
           </Link>
         </div>
       </section>

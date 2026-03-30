@@ -104,10 +104,6 @@ OKBrain is an initiative of Arunoda Susiripala. The goal is to make sure Sri Lan
 
 We are working on [OKBrain Harness](https://github.com/okbrainhq/OKBrain-Harness), which is an open-source AI Harness that sits between ChatGPT and OpenClaw. It's our take on how to own the AI stack. You should not run it as-is but try to steal ideas from it.
 
-We are officially launching on March 31st, 2026. Here are a couple of things we are launching:
+We officially launched on March 31st, 2026, releasing the [OKBrain Harness](https://github.com/okbrainhq/OKBrain-Harness) open-source project. We also run a [Grants program](/grants) for open-source projects with common goals and weekly office hours.
 
-* Open Source release of OKBrain Harness
-* Grants for open-source projects with common goals
-* Weekly office hours
-
-Join our [Launch Party](/launch-party) to be part of it.
+Subscribe to our [Newsletter](/subscribe) for updates.
