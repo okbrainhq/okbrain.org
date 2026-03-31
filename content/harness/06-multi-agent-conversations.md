@@ -6,6 +6,8 @@ OKBrain Harness is designed so you can connect any AI model of your choice. You 
 
 Beyond that, OKBrain Harness supports multi-agent conversations. Think of it as a group chat where each model sees the others' messages, has self-awareness, and knows about the other assistants.
 
+![Multi-agent conversation in OKBrain](/images/okbrain-multi-agent.webp)
+
 By default, we use Google Gemini models because it is easy to get an API key (assuming you have a Google account). **Gemini 3 Flash** is a very capable model at an affordable price point, and it is fast.
 
 We also have built-in providers for the following — you only need an API key to set them up:

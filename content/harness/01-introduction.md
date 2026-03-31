@@ -4,6 +4,8 @@ title: Introduction
 
 OKBrain Harness is an [open-source](https://github.com/okbrainhq/OKBrain-Harness) personal AI Harness. Think of it as your own version of ChatGPT where you keep the data. Here are some key features:
 
+![OKBrain Interface showing the dashboard with folders, timeline, and chat interface](/images/okbrain-intro.webp)
+
 * 100% open-source with the MIT License
 * Keeps your data locally (via SQLite)
 * Infinite memory support (it tracks everything and knows when to forget)

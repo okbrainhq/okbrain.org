@@ -2,7 +2,7 @@
 title: Contributions
 ---
 
-This is a reference implementation of an AI Harness based on the OKBrain philosophy. It is released under the MIT License — you can use it for any purpose without attribution.
+This is a reference implementation of an AI Harness based on the OKBrain philosophy. It is released under the MIT License — you can use it for any purpose without attribution. The source code is available on [GitHub](https://github.com/okbrainhq/OKBrain-Harness).
 
 We do not accept contributions in the form of pull requests or issue reports. However, if you find a security issue, you can notify us at [hello@okbrain.org](mailto:hello@okbrain.org).
 

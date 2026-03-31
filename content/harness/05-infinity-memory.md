@@ -35,6 +35,8 @@ The fact sheet is generated right after fact extraction, using the same LLM. Her
 
 The generated fact sheet is injected into the AI model's context when you ask a question, so it can use that information to give you a better answer.
 
+![OKBrain fact sheets showing organized personal information](/images/okbrain-fact-sheets.webp)
+
 ## RAG-Based Facts
 
 This only works if you enable vector embedding support. We use an embedding model to convert facts into a vector space where similar facts stay close together. When you ask a question, we find the most relevant facts using semantic similarity.
@@ -54,3 +56,7 @@ This way, the AI model is always aware of your recent conversations.
 This is how we achieve infinite memory. It is straightforward to implement, requires no special libraries, and while it is not perfect, it gets the job done.
 
 You can visit the /me page to view your facts and fact sheets, and edit them as you wish.
+
+![OKBrain using memory in a conversation](/images/okbrain-using-memory.webp)
+
+*This is how OKBrain uses your memory to provide context-aware responses.*

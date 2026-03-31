@@ -9,3 +9,6 @@ The only time data leaves your machine is when you talk to an AI model provider.
 You can use providers like [Fireworks](https://fireworks.ai/), which promise to never log or retain your data.
 
 And of course, you can run local models entirely offline.
+
+![OKBrain running on a local laptop](/images/okbrain-local.webp)
+*OKBrain can run on your MacBook, a Cloud VM, or anywhere. It's just a Next.js app.*
