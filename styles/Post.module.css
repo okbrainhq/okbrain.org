@@ -89,15 +89,15 @@
 }
 
 .content a {
-  color: var(--accent);
+  color: var(--accent-strong);
   text-decoration: underline;
-  text-decoration-color: var(--border);
+  text-decoration-color: var(--accent);
   text-underline-offset: 0.2rem;
   transition: text-decoration-color 0.15s ease, text-shadow 0.15s ease;
 }
 
 .content a:hover {
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--accent-strong);
   text-shadow: 0 0 8px var(--glow);
 }
 
@@ -157,6 +157,13 @@
   border-left: 3px solid var(--accent);
   color: var(--text);
   background: rgba(51, 255, 51, 0.03);
+}
+
+.content hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--accent);
+  opacity: 0.4;
 }
 
 @media (max-width: 640px) {
