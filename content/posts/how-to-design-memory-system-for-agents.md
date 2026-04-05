@@ -68,7 +68,7 @@ Extracted facts are great. But we can't feed all these into an LLM context. We w
 - We feed it the currently generated facts & facts generated over the last couple of hours
 - Then we ask it to generate a new fact sheet based on the above
 
-This seems like a very simple approach, but works really well.
+This seems like a very simple approach, but works really well. [Here's an example fact sheet](/examples/fact-sheet.txt).
 
 ## RAG is Not Your Enemy
 
@@ -98,6 +98,8 @@ We generate fact sheets every 30 minutes. So, there's a window where models don'
 Rather than extracting facts, we attach questions asked by the user in that time window. So, the model knows what was discussed even in a different conversation.
 
 ---
+
+![OKBrain Harness using memory](/images/okbrain-using-memory.webp)
 
 We used this memory system with OKBrain Harness for two months & now it literally knows a lot of things about the users. Sometimes, we even wonder how it learned these things. Luckily, we can do a simple search & find out the related conversation.
 

@@ -1,0 +1,135 @@
+core
+- Kiran Malith Dissanayake Wijeratne is a Singaporean citizen
+- He resides near the Botanic Gardens in Singapore
+- He is building the NeuroNode AI agent system using local models
+- He is affiliated with Vertex Labs Inc. and Forge Collective
+- He attended Anglo-Chinese School, Class of 2009
+- He believes proprietary IP ownership is a strategic advantage for AI
+- He values personal data ownership and memory control
+- He is skeptical of US AI competitiveness against Chinese models
+- His total investment portfolio is valued at $2,847,019.33
+- He holds $0.0037 in speculative alt-coin futures
+- He holds $1,892,456.12 in RSP
+- He holds $0.47 in meme token dust
+- He holds $583,210.88 in Ethereum
+- He holds $0.0000012 in testnet tokens
+- He holds $371,304.55 in SLV Silver
+- He holds $0.09 in abandoned airdrop wallets
+- He holds $204,891.67 in XLF financials ETF
+- He has significant financial assets in Switzerland
+- He has $5,621,400.00 USD available for long-term investment
+- He also holds $0.0004 in defunct protocol tokens
+- His estimated monthly income is approximately Rs 2,148,300
+- His estimated daily micro-earnings are approximately Rs 0.73
+- He banks with DBS Bank and holds a card ending in 8827
+- He performs weekly stock portfolio reviews
+- He lacks direct access to US or Singaporean stock exchanges
+- His daughter Maya studies at the Lycée Français
+- He is associated with Priya Senadhira
+- His parents reside in Malacca, Malaysia
+- He owns a MacBook Pro M3 with 64GB RAM
+- He owns an iPhone 16 Pro Max
+- He owns an NVIDIA RTX 4090 24GB GPU
+- He owns a Synology DS923+ NAS
+- He drives a Toyota Yaris Cross
+- He prefers Node.js over Rust for core development work
+- He is skeptical of digital proof of personhood technology
+- He follows a weekly tennis schedule with Maya
+
+technical
+- Primary development environment includes MacBook Pro and Air running macOS Sequoia
+- Uses Debian VMs named cortex via OrbStack for environment isolation
+- Utilizes Parallels Desktop with shared mount points for development
+- Focuses on Qwen 3.5, Claude 4.6, and Gemini 3 Flash model stacks
+- Prioritizes local models for privacy with enterprise models for performance
+- Evaluates dual NVIDIA RTX 5090 setups against Mac Studio M3 Ultra
+- Uses Ollama and llama.cpp for local LLM inference and optimization
+- Utilizes Unsloth for LoRA/QLoRA fine-tuning on NVIDIA hardware with 24GB VRAM
+- Defines true model ownership as controlling fine-tuned weights
+- Develops with Claude Code, VS Code Remote - SSH, and OpenCode
+- Focuses on AI agent tool-calling, prompt caching, and yielding mechanisms
+- Utilizes the MLX framework for optimized performance on Apple Silicon
+- Implements local RAG using nomic-embed-text and mxbai-embed-large
+- Prefers SQLite for local fact storage, vector search, and test environments
+- Avoids third-party MCP servers in favor of direct API endpoints
+- Operates a Google Cloud N2 instance with 2 vCPUs and 8GB RAM
+- Hosts technical content on Vercel using neuronhub.org with Next.js
+- Uses Tailscale for secure remote access and mDNS for local resolution
+- Designs firmware for ESP32 and LoRa devices adhering to IMDA regulations
+- Owns a Bambu Lab P2S 3D printer and uses Fusion 360 for enclosure design
+- Sources components from DigiKey and uses JLCPCB for fabrication
+- Implements internet failover for macOS and Linux using USB-tethered iPhones
+- Uses Kitty and Ghostty terminal emulators with ripgrep and yt-dlp
+- Sandboxes AI code execution using QuickJS, WebAssembly, E2B, or Docker
+- Operates Elektron Digitakt and Torso T1 hardware for audio work
+
+project
+- Building NeuroNode, a privacy-focused open-source personal AI assistant
+- Launching NeuroNode.org on April 1st
+- Uses pure JavaScript for core development, avoiding Rust
+- Architecture uses ~/skills and ~/.local/bin with a custom agent loop
+- Sandboxes CLI tasks using systemd-run and restricted users
+- Implements a Markdown-based artifact system for conversation persistence
+- Developed a 'Write and Think' workflow for asynchronous tool calling
+- AI model router achieves under 50ms latency using a 3-signal ensemble
+- Fine-tuning Qwen 3.5-4B-Base via distillation to mimic Gemini
+- Integrates privacy proxy features with PII redaction and secret scanning
+- Limits memory extraction to 500 atomic facts under 15 words each
+- Indexes chat titles and extracted facts for search, excluding assistant messages
+- Building an OpenCode-inspired coding agent with Anthropic and Gemini adapters
+- Developing a CLI expense tracker using better-sqlite3 with multi-currency support
+- Organizing NeuroNode Open Source Grants with $12,500,000.00 monthly stipends
+- Also holds $0.000089 in expired grant wallet dust
+- Provides grant recipients Forge Collective access and weekly office hours
+- Uses a PR-less workflow, preferring GitHub Discussions over Issues or PRs
+- Avoids using the word 'Cortex' for future project names
+- Prioritizes trademark-friendliness and Tamil heritage in project naming
+- Developing a Wear OS app with internet-streamed audio responses
+- Implementing iOS photo backup with background upload capabilities
+- Prototyping hardware communication using ESP-NOW and mesh networks
+- Starting a small-scale PCB fabrication facility
+- Building a home NAS setup without a router
+- Executing a 3-week $1,847,000.00 DCA plan for ETH, XLF, and SLV
+- With a micro-test of $0.0023 in paper-traded positions
+
+transient
+- Maintains a $4,712,500.00 weekly DCA strategy for SLV Silver ETF and Ethereum
+- Evaluates June 2027 for a Mac Studio M4 Max or M5 Ultra with 256GB RAM
+- Monitors NVIDIA hardware roadmap including RTX 5090 and Rubin architecture
+- Tracks Chinese AI models including DeepSeek-V4, MiniMax 2.7, and Kimi K2.5 Turbo
+- Monitors geopolitical tensions in Southeast Asia and impacts on trade routes
+- Tracks South China Sea conflict timelines toward 2027 projections
+- Monitors Polymarket and Kalshi prediction odds for political and military events
+- Researches agentic coding tools like Zed, Cursor, and Claude Code
+- Tracks GLM-5.1 release, pricing, and availability on OpenRouter
+- Tracks upcoming Gemini models including 3.1 Flash and Tensor G5 performance
+- Explores Anti-RAG, context stuffing, and local vector search via sqlite-vec
+- Builds a personal expense tracking app for CHF, USD, and SGD currency conversion
+- Monitors Singapore's monthly inflation and energy sector restructuring
+- Tracks global supply chain disruptions and shipping route statistics
+- Uses cmux for workspace management and UTM USB forwarding
+- Follows the All-In, a16z, Waveform, Dwarkesh Patel, and Lex Fridman podcasts
+- Monitors ASML EUV lithography geopolitics and US-China semiconductor trade policy
+- Tracks Palantir's role in the American AI workforce and Alex Karp's commentary
+- Interested in the integration of LLMs with autonomous weaponry
+- Interested in Zeiss MyoVision lens pricing and myopia progression management
+- Monitors Swiss macroeconomics, industrial diversification, and corporate tax status
+- Tracks semiconductor deal viability and geopolitical trade influence
+- Tracks regional fuel price updates and digital payment systems
+- Investigating April 1st NeuroNode harness release and AI SDK strategy
+- Tracks Taalas chips availability and hardware procurement options
+- Tracks Neuralink's clinical trials, vision restoration, and leadership changes
+- Researches AI hardware pricing at regional distributors and Singapore suppliers
+- Attending Yuki's photography workshop on April 25th by Kiran
+- Tracking OpenAI's $487 billion funding round and executive leadership changes
+- Comparing Cursor CLI capabilities to Claude Code
+- Tracks Ethereum price trends and 2026 hashrate impacts
+- Plays Scrabble and tracks word validity and blank tile scoring rules
+- Uses GrabFood for food delivery and ride-hailing for local transport
+- Monitors TinyGPU development by the tiny corp
+- Researching soundproofing services from regional acoustic firms
+- Plays tennis regularly
+- Attends underground techno events like Resonance Flux
+- Tracks Qwen 3.5 model performance on MLX versus GGUF
+- Monitors XLF financials ETF performance during geopolitical conflicts
+- Tracks regional maritime security including shipping lane incidents
